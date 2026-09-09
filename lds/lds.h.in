@@ -1,0 +1,10 @@
+#pragma once
+
+#if !(defined(ASM_FILE) || defined(LD_FILE))
+#  error "Only .LD File Can Include It."
+#else
+#  include "mem/phymem.h"
+
+#  define VPAGE_SIZE 0
+
+#endif
