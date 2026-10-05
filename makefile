@@ -23,11 +23,11 @@ SUB_MODULES += drivers $(addprefix drivers/,$(DRIVERS))
 # SUB_MODULES += fs $(addprefix fs/,$(FS))
 
 # 定义工具链
-CROSS_COMPAIR_PATH := /home/youning/cross/bin
+CROSS_COMPAIR_PATH := /home/linuxbrew/.linuxbrew/bin
 
-CC  := $(CROSS_COMPAIR_PATH)/x86_64-elf-gcc-15
-CXX := $(CROSS_COMPAIR_PATH)/x86_64-elf-g++-15
-CPP := $(CROSS_COMPAIR_PATH)/x86_64-elf-cpp-15
+CC  := $(CROSS_COMPAIR_PATH)/x86_64-elf-gcc
+CXX := $(CROSS_COMPAIR_PATH)/x86_64-elf-g++
+CPP := $(CROSS_COMPAIR_PATH)/x86_64-elf-cpp
 AS  := nasm
 AR  := $(CROSS_COMPAIR_PATH)/x86_64-elf-ar
 LD  := $(CROSS_COMPAIR_PATH)/x86_64-elf-ld
